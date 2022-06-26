@@ -1,0 +1,875 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\title{Diferencialne enačbe}
+
+\begin{document}
+    \maketitle
+    
+    \section{Uvod}
+    \begin{enumerate}
+        \item Definiraj parcialno diferencialno enačbo
+        \item Definiraj red enačbe
+        \item Kdaj imamo eno funkcijo in kdaj sistem funkcij?
+        \item Kaj je rešitev PDE?
+        \item Navedi tri oblike PDE in opiši vsako on njih
+        \begin{itemize}
+            \item Linearna
+            \item Semilinearna
+            \item Kvazlinearna
+        \end{itemize}
+        \item Navedi izreke o rešljivosti PDE
+        \item Koliko rešitev je v splošnem? Kako dobimo eno samo rešitev?
+        \item Definirajs $F$ kot vektorsko polje. Kaj velja za rešitev PDE? (zakaj?)
+        \item Opiši rešitev PDE geometrijsko
+        \begin{itemize}
+            \item Kak graf pripada funkciji u? Kaj je to geometrijsko?
+            \item Kaj je definirano na tej ploskvi?
+            \item Kaj sta tangenti na krivulji v neki točki?
+            \item Čemu je enaka linearna ogrinjača teh dveh tangent?
+        \end{itemize}
+        \item Definiraj - povzami - kaj je tangentna ravnina?
+        \item Kaj podaja vsak par funkcij $f$ in $g$?
+        \item Kako je polje invariantno?
+        \item Kakšen je predpis za polje ravnin?
+        \item Definiraj integrabilno polje
+        \item Kaj je avtonomen sistem?
+        \item Kaj je avtonomen sistem NDE 1. reda?
+        \item Kako ga še lahko zapišemo?
+        \item Kaj je rešitev sistema?
+        \item Kaj torej velja za tangente funkcije gama?
+        \item Kako imenujemo funkcijo gama?
+        \item Kaj pove eksistenčni izrek o tej krivulji?
+        \item Velja naj podobnega za polje ravnin? 
+        \item Navedi Stokesov izrek na ektorskem polju $(f(x, y), g(x, y))$
+        \item Kdaj je polje potencialno?
+        \item Kaj velja na majhnih območjih?
+    \end{enumerate}
+
+    \section{Število rešitev PDE}
+    \begin{enumerate}
+        \item Kaj so rešitve sistema NDE 1. reda $n$ neznanih funkcij?
+        \item Kaj so rešitve, če je sistem linearen in homogen?
+        \item Kaj so rešitve, če je sistem nehomogen?
+        \item Navedi valovno enačbo
+        \item Kaj so njene rešitve?
+        \item Kaj je njena splošna rešitev?
+    \end{enumerate}
+
+    \subsection{Enačba za nihanje strune}
+    \begin{enumerate}
+        \item Kako opišemo struno?
+        \item Kako dobimo obliko strune v fiksnem času?
+        \item Kaj predstavlja vrednost funkcije?
+        \item Katere sile delujejo na kratkem delčku strune?
+        \item Navedi hookov zakon
+        \item Navedi tangento na krivuljo in njen enotski vektor
+        \item Kako opišemo dinamiko delčka?
+        \item Prevedi to enačbo na enačbo valovanja strune
+        \item Navedi diskreten sistem enačb valovne enačbe 
+        \item Kaj je rešitev?
+        \item Kako iz sistema dobimo valovno enačbo?
+        \item Kaj je torej splošna rešitev valovne enačbe?
+    \end{enumerate}
+
+    \section{Enačbe prvega reda}
+    \begin{enumerate}
+        \item Definiraj PDE 1. reda
+        \item Kako poiščemo rešitve PDE 1. reda v dveh spremenljivkah?
+        \begin{itemize}
+            \item Kaj iščemo namesto rešitve $u(x, y)$?
+            \item Kaj imamo v vsaki točki te ploskve?
+            \item Kako je določena tangentna ravnina?
+            \item Od kod dobimo pogoje za odvoda $u$?
+            \item Kaj je normala tangentne ravnine?
+            \item Kaj torej določa naša enačba?
+            \item Kaj podaja vsaka normala?
+            \item Kaj torej dobimo?
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{Kvazlinearna PDE 1. reda}
+    \begin{enumerate}
+        \item Kakšne oblike je kvazlinearna enačba 1. reda?
+        \item Razloži kako rešujemo kvazlinearno PDE (v dveh korakih)
+        \item Geometrijsko razloži kako poiščemo rešitev
+    \end{enumerate}
+
+    \section{Metoda karakteristik}
+    \begin{enumerate}
+        \item Za kaj se uporablja?
+        \item Kakšen problem rešujemo?
+        \item Kaj je začetni pogoj?
+        \item Kakšen pomen ima začetni pogoj?
+        \item Kako se imenuje problem skupaj z začetnim pogojem?
+        \item Kaj je splošna rešitev?
+        \item Kako lahko prepišemo problem?
+        \item Kaj je normala na iskano ploskev?
+        \item Kaj nam pove enačba iz vprašanja 7?
+        \item Kaj so integralske krivulje polja $(a, b, c)$? Kaj rešijo?
+        \item Kje ležijo integralske krivulje?
+        \item Kako se imenuje sistem?
+        \item Koliko rešitev ima karakteristični sistem ob nekem začetnem pogoju?
+        \item Kje je definiran začetni pogoj Cauchyjeve naloge? Kaj vzamemo za začetne vrednosti rešitev?
+        \item $x$ in $y$ sta funkciji $t$ in $s$. Zapiši Cauchyjev problem. Kaj so rešitve in kje so definirane.
+        \item Skiciraj
+        \item Kaj je karakteristična krivulja?
+        \item Kako izmerimo velikost karakteristične krivulje?
+        \item Kaj je rešitev karakterističnega sistema?
+        \item Kdaj je rešitev parametrizacija ploskve?
+        \item Kaj pa če rang ni 2?
+        \item Kaj linearen Cauchyjev problem?
+        \item Kako izgleda njegov karakteristični sistem?
+        \item Kako rešijemo linearno PDE 1. reda?
+        \begin{itemize}
+            \item Kaj naredimo najprej?
+            \item Kaj naredimo, če s tem dobimo rešitev?
+            \item Kaj naredimo, če s tem ne najdemo rešitve?
+        \end{itemize}
+    \end{enumerate}
+
+    \section{Eksistenčni izrek za kvazlinearne enačbe}
+    \begin{enumerate}
+        \item Katero nalogo rešujemo?
+        \item Navedi tranzverzalnostni pogoj
+        \item Kaj je še drugi pogoj, da izrek velja?
+        \item Kaj je bistvo izreka?
+        \item Kaj se spremeni, če transverzalnostni pogoj ni izpolnjen na nekem intervalu za $s$?
+    \end{enumerate}
+
+    \subsection{Pomen transverzalnostnega pogoja - 1}
+    \begin{enumerate}
+        \item Katero preslikavo moramo opazovati?
+        \item Primerjaj transverzalnostni pogoj in odvod preslikave $F$
+        \item V kakšni zvezi sta?
+        \item Katera vektorja predstavljata vrstici iz transverzalnostnega pogoja?
+        \item Kaj transverzalnostni pogoj pove o teh dveh vektorjih?
+        \item Za katera dva vektorja zato velja isto?
+        \item Kaj lahko sklepamo?
+    \end{enumerate}
+
+    \subsection{Pomen transverzalnostnega pogoja - 2}
+    \begin{enumerate}
+        \item Kateri dve determinanti sta enaki? Kolikšna je njuna vrednost?
+        \item Po katerem izreku nadaljujemo? Kaj dobimo?
+        \item Kaj je karakteristika za rešitev Cauchyjevega problema?
+    \end{enumerate}
+
+    \subsection{Dokaz eksistenčnega izreka}
+    \begin{enumerate}
+        \item Spet navedi Cauchyjev pogoj
+        \item Kaj nam da eksistenčni izrek za NDE 1. reda?
+        \item Katero preslikavo dobimo?
+        \item Kje je rang te preslikave maksimalen in koliko je to?
+        \item Zakaj je maksimalen?
+        \item Kaj torej ta preslikava parametrizira
+        \item Kaj lahko zaradi maksimalnosti ranga definiramo (v obe smeri)?
+        \item Izračunaj odvoda $u_x$ in $u_y$
+        \item Kaj sledi iz inverznosti preslikav?
+        \item Kateri dve enačbi dobimo
+        \item Pokaži, da rešitev obstaja
+        \item Kaj želimo dokazati, ko dokazujemo enoličnost rešitve?
+        \item Katero preslikavo definiramo?
+        \item Vstavi karakterističi sistem v odvod te preslikave
+        \item Kaj dobimo?
+        \item Kaj je pri tem začetni pogoj?
+        \item Kaj je rešitev NDE?
+        \item Kaj je zaključek?
+    \end{enumerate}
+
+    \subsection{Neizpolnjevanje tranzverzalnostnega pogoja}
+    \begin{enumerate}
+        \item Kaj takoj velja?
+        \item Kakšna sta lahko stolpca? (2 možnosti)
+        \item Kaj velja, če nista vzporedna?
+        \item Koliko je rešitev?
+        \item Kaj velja, če sta vzporedna?
+        \item Koliko je rešitev?
+    \end{enumerate}
+
+    \section{Nelinearna PDE 1. reda}
+    \begin{enumerate}
+        \item Kakšne oblike je PDE 1. reda?
+        \item Kaj nam določa ta enačba v fiksni točki?
+        \item Vpelji nove oznake
+        \item Kaj je poten normala?
+        \item Kateri pogoj morajo izpolnjevati normale?
+        \item Kakšne ravnine iščemo?
+        \item Kako podamo enačbo take ravnine?
+        \item Kaj nas pri tem zanima?
+        \item Kako je podana ogrinjača te družine?
+        \item Kako se imenuje?
+        \item Kako izgleda rešitvena ploskev
+    \end{enumerate}
+
+    \subsection{Parametrizacija Mongeejevega stožca}
+    \begin{enumerate}
+        \item Odvajaj PDE po $\lambda$
+        \item Vpelji 1-parametrično družino vektorskih polj
+        \item Kaj mora za njo veljati?
+        \item Kaj je normala?
+        \item Kakšno zvezo med komponentami vektorskega polja dobimo iz druge enačbe?
+        \item Kakšen je sistem za Mongeejev stožec?
+        \item Kakšna zveza sledi iz danih sistemov?
+        \item Kaj je parametrizacija Mongeejevega stožca?
+        \item Iščemo rešitev $r(t) = (x(t), y(t), u(t))$ enačbe $r' = F$. Zapiši karakteristični sistem 
+        \item Pokaži, da iz tega karakterističnega sistema sledi karakterističi sistem za kvazlinearno enačbo
+        \item Kako so geometrijsko prikazane normale Mongeejevega stolpca v kvazlinearnem sistemu?
+        \item Kaj sta $p$ in $q$?
+        \item Kaj moramo narediti, da dobimo dobro definiran sistem?
+        \item Geometrično opiši kaj bomo naredili
+        \item Sistem kakšne oblike želimo?
+        \item Zakaj?
+        \item Pokaži, da je konstrukcija traku smiselna
+        \item Odvajaj začetno PDE po $x$ in po $y$
+        \item Katera odvoda $p$ in $q$ sta enaka? Zakaj? 
+        \item Vstavi v odvajano PDE
+        \item Čemu sta enaka odvoda $p$ in $q$ po $t$?
+        \item Združi vse v karakteristični sistem 5 enačb
+        \item Poimenuj pogoja katerima mora ustrezati začetna krivulja?
+        \item Definiraj projekcijo iz $R^5$ na krivuljo v $R^3$
+        \item Navedi kompatibilnostna pogoja
+        \item Navedi tranzverzalnostni pogoj
+    \end{enumerate}
+
+    \subsection{Eksistenčni izrek za PDE 1. reda}
+    \begin{enumerate}
+        \item Navedi izrek. Kaj so pogoji? Kaj je Bistvo izreka?
+        \item Katera preslikava podaja parametrizacijo ploskve?
+        \item Kaj je rešitev?
+        \item Kaj velja za rešitev?
+        \item Kako dobimo izražave $u$, $p$ in $q$ v odvisnosti od $x$ in $y$?
+        \item Kakšno rešitev da kompatibilnostni pogoj?
+        \item Kaj zagitavlja izpolnjevanje kompatibilnostnih pogojev?
+        \item Kaj iščemo?
+        \item TRDITEV - Navedi trditev, ki nam to zagotavlja 
+        Dokaz
+        \item Kaj označimo z $A_1$ in $A_2$?
+        \item Definiraj preslikavo $F$
+        \item Kaj iščemo? 
+        \item Kaj že vemo?
+        \item Kateri izrek uporabimo?
+        \item Kaj je njegov pogoj?
+        \item Kaj sledi?
+    \end{enumerate}
+
+    \section{Linearne PDE 2. reda}
+    \begin{enumerate}
+        \item Navedi 2 razloga zakaj so PDE pomembne
+        \item Kakšne oblike je linearna PDE 2. reda? Kaj je na levi in kaj na desni strani?
+        \item Kakšen predpis ima linearni operator?
+        \item Kakšna je linearna PDE 2. reda za dve neznanki?
+        \item Definiraj glavni del operatorja $L$
+        \item Klasificiraj enačbe 2. reda dveh spremenljivk. Za vsako podaj pogoj
+        \begin{itemize}
+            \item Hiperbolična
+            \item Parabolična
+            \item Eliptična
+        \end{itemize}
+        \item Kaj pomeni, da je klasifikacija smiselna?
+        \item Kako dobimo vektor novih spremenljivk?
+        \item Kako se izraža rešitev v novih spremenljivkah?
+        \item Izračunaj odvode, ki nastopajo v PDE 2. reda za dve spremenljivki
+        \item Kaj je glavni del operatorja $L$ v starih spremenljivkah?
+        \item Kaj je glavni del operatorja $L$ v novih spremenljivkah?
+        \item Izrazi koeficiente v glavnem delu operatorja v novih spremenljivkah s koeficienti v glavnem delu operatorja v starih spremenljivkah
+        \item Kaj predstavljajo te izražave?
+        \item Zapiši kvadratno formo v matrični obliki
+        \item Kaj velja za determinanto?
+        \item Kaj zato velja za tip enačbe?
+    \end{enumerate}
+
+    \section{Kanonične oblike}
+    \begin{enumerate}
+        \item Kaj je finta kanonične oblike?
+        \item Kaj je kanonična oblika hiperbolične enačbe?
+        \item Kaj je kanonična oblika eliptične enačbe?
+        \item Kaj je kanonična oblika parabolične enačbe?
+    \end{enumerate}
+
+    \subsection{Kanonična oblika hiperboličnega tipa}
+    \begin{enumerate}
+        \item Kaj pravi izrek o kanonični obliki hiperboličnega tipa?
+        Dokaz
+        \item Kako se glasi naša enačba v novih spremenljivkah in kaj želimo?
+        \item Kako izrazimo željeno s starimi spremenljivkami?
+        \item Kaj predstavljata dobljeni enačbi?
+        \item Kako rešujemo tako enačbo in kaj dobimo?
+        \item Zapiši enačbo v drugačni obliki
+        \item Kaj iščemo in kako to izračunamo?
+        \item Kaj sta dobljeni enačbi?
+        \item Kako rešujemo dobljeni enačbi?
+        \item Kaj je rešitev?
+        \item Kako se izrazi $\xi$?
+        \item Kaj je geometrični pomen te izražave?
+        \item Kako dobimo drugo kanonično spremenljivko? $\zeta$?
+        \item Navedi Triconijevo enačbo
+        \item Kdaj je enačba hiperbolična?
+        \item Kaj je njen kanonični sistem?
+        \item Poišči njene kanonične koordinate
+        \item Zapiši enačbo v kanoničnih koordinatah
+    \end{enumerate}
+
+    \subsection{Kanonična oblika paraboličnega tipa}
+    \begin{enumerate}
+        \item Kaj pravi izrek o kanonični obliki paraboličnega tipa?
+        Dokaz
+        \item Kaj smemo predpostaviti po definiciji enačbe paraboličnega tipa? Zakaj?
+        \item Kaj moramo pokazati?
+        \item Dovolj je pokazati le eno enakost. Zakaj?
+        \item Pretvori enačbo na lažjo obliko
+        \item Kako izberemo kanonične koordinate?
+        \item PRIMER - Najdi kanonične koordinate enačbe $x^2 * u_{xx} - 2xy * u_{xy} + y^2 * u_{yy} + x * u_x + y * u_y = 0$
+    \end{enumerate}
+
+    \subsection{Kanonična oblika eliptičnega tipa}
+    \begin{enumerate}
+        \item Kaj pravi izrek o kanonični obliki eliptičnega tipa?
+        \item Za kakšne koeficiente originalne enačbe iščemo kanonične koordinate?
+        Dokaz
+        \item Kakšna je enačba v novih koordinatah in kaj velja za njene koeficiente?
+        \item Izrazi nove koeficiente s starimi
+        \item Uporabi 3. vprašanje
+        \item Definiraj novo funkcijo
+        \item Kateri izraz je ekvavilenten sistemu iz 5. vprašanja
+        \item Za katero funkcijo in izraz velja enako?
+        \item Kako dobimo enačbi prvega reda za ti dve na novo definirani preslikavi?
+        \item Kateri enačbi dobimo?
+        \item Kako dobimo $\Phi(x, y)$ in $\Psi(x ,y)$?
+        \item Kako sta $\Phi(x, y)$ in $\Psi(x ,y)$ povezana z rešitvjo $u$?
+        \item Čemu je ekvavilentna prvotna enačba?
+        \item Kdaj ima definiranje $\Phi(x, y)$ in $\Psi(x ,y)$ smisel?
+        \item Izrazi koorfinati $\xi$ in $\zeta$
+        \item Kako iz starih koeficientov PDE dobimo nove? Zapiši v matrini obliki
+        \item Uporabi to v našem primeru in izračunaj kanonično obliko enačbe
+        \item Kaj je translacija pri hiperboličnem tipu?
+        \item Kako jo dobimo?
+        \item Kako se imenujejo translacije?
+    \end{enumerate}
+
+    \section{Podaj primer hiperbolične enačbe}
+    \begin{enumerate}
+        \item Kaj je njena formula?
+        \item Domena
+        \item Kanonična oblika?
+        \item Kanonični spremenljivki?
+        \begin{itemize}
+            \item Kaj je karakteristični sistem?
+        \end{itemize}
+        \item Kaj je kanonična oblika?   
+        \item Reši kanonično enačbo
+        \item Kaj je originalnih koordinatah?
+        \item Definiraj krepko rešitev
+        \item Definiraj šibko rešitev?
+        \item Je limita še vedno 2-krat odvedljiva?
+        \item Kaj so karakteristične premice valovne enačbe?
+        \item Kakšna informacija se prenaša vzdolž karakteristik neke hiperbolične enačbe?
+        \item Zapiši valovno enačbo na drugačen način
+        \item V kakšni zvezi sta dobljena člena?
+        \item Kaj velja za rešitev?
+        \item Kaj sta rešitvi "manjših" PDE?
+        \item Kako se imenujeta rešitvi?
+        \item Kako rečemo rešitvi $u = F + G$?
+        \item Kako se glasi Cauchyjeva naloga valovne enačbe?
+        \item Izrazi $F$ in $G$ z začetnimi pogoji
+        \item Kaj je torej rešitev?
+        \item Kako se imenuje?
+        \item IZREK - Podaj eksistenčni izrek za valovno enačbo
+        \item Kaj pomeni dobra pogojenost?
+        Dokaz
+        \item Kako dokažemo obstoj in enoličnost?
+        \item Kdaj je rešitev dvakrat zvezno odvedljiva?
+        \item Kaj pomeni zvezna odvisnost?
+        \item Pokaži, da je res zvezno odvisna od začetnih pogojev
+    \end{enumerate}
+
+    \section{Nehomogena valovna enačba}
+    \begin{enumerate}
+        \item Cauchyjev problem nehomogene valovne enačbe
+        \item Kaj v homogeni enačbi vpliva na vrednosti njene rešitve?
+        \item Kje je definirana rešitev homogene?
+        \item Kaj je karakteristični trikotnik?
+        \item Kje je definirana rešitev nehomogene?
+        \item TRDITEV - Koliko rešitev ima nehomogen problem?
+        \item Dokaz
+        \begin{itemize}
+            \item Definiraj novo funkcijo in zapiši katero enačbo rešitev
+            \item Kaj so začetni pogoji te funkcije?
+            \item Po čem sledi enoličnost rešitve nehomogene?
+        \end{itemize}
+        \item IZREK - Greenov izrek (formula)
+        \item Izračunaj drugi integral nehomogenega dela po karakterističnem trikotniku
+        \begin{itemize}
+            \item Uporabi greenovo formulo
+            \item Izračun po bazi
+            \item Izračun po desni strani
+            \item Izračun po levi strani
+            \item Združi v eno vrstico
+            \item Kaj je dobljena rešitev?
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{Duhamelov postopek}
+    \begin{enumerate}
+        \item Kaj je finta postopka?
+        \item TRDITEV - S pomočjo rešitve katerega problema znamo rešiti našo valovno enačbo pri pogojih $u = 0$ in $u_t = 0$?
+        Dokaz
+        \item Označi integral pomožne funkcije
+        \item Kaj so začetni pogoji te funkcije?
+        \item Katero PDE porodi?
+        \item Kaj je rešitev za $v$?
+        \item Kaj je rešitev zaćetnega problema za $u$?
+        \item Kateri splošnejši problem želimo po navadi rešiti?
+        \item Kaj je njegova rešitev?
+        \item Zapiši formulo rešitve
+    \end{enumerate}
+
+    \section{Uporaba Fourierove analize pri reševanju PDE}
+    \begin{enumerate}
+        \item Kaj je nastavek za rešitev?
+        \item Kako lahko opišemo našo rešitev?
+        \item Navedi toplotno enačbo na končnem nosilcu
+        \item Kje je definirana rešitev?
+        \item Navedi Dirichletov robni pogoj
+        \item Kaj je začetni pogoj
+        \item Ob skici pojasni kaj imamo podano in kaj želimo zračunati
+        \item S kakšnim nastavkom rešujemo enačbo?
+        \item Prevedi toplotno enačbo na sistem enačb
+        \item Kako se imenuje sistem?
+        \item Kaj je prostorski del našega problema? Kaj je robni pogoj?
+        \item Katere tri možnosti ločimo?
+        \item Kaj je splošna rešitev prostorskega dela pri $\lambda < 0$?
+        \item Kaj je rešitev?
+        \item Kaj je splošna rešitev prostorskega dela pri $\lambda = 0$?
+        \item Kaj je rešitev?
+        \item Kaj je splošna rešitev prostorskega dela pri $\lambda > 0$?
+        \item Kaj je rešitev?
+        \item Kaj smo reševali?
+        \item Kaj so lastne vrednosti?
+        \item Kaj so lastni vektorji?
+        \item Kaj so rešitve časovnega dela?
+        \item Kaj je rešitev in zakaj?
+        \item Katero rešitev moramo poiskati?
+        \item Kako razvijemo začetni problem v vrsto?
+        \item Kaj so koeficienti v razvoju začetnega problema?
+        \item Kaj je torej rešitev?
+        \item Kaj pomeni, da je rešitev krepka?
+        \item S čem lahko dokažemo krepkost?
+        \item Kaj je Neumannov pogoj za začetno enačbo?
+    \end{enumerate}
+
+    \subsection{Neomogeni začetno-robni problemi}
+    \begin{enumerate}
+        \item Navedi sistem za nehomogen začetno robni problem valovne enačbe
+        \item Ali lahko rešujemo s seperacijo spremenljivk?
+        \item Kako lahko opazujemo homogen sistem?
+        \begin{itemize}
+            \item Kot kakšno funkcijo smo opazovali rešitev problema?
+            \item Kako lahko zapišemo krivulje v $R^3$?
+            \item Kako zapišemo krivuljo v $R^3$ glede na neko bazo?
+            \item Kaj so baze v prostoru spremenljivke $x$?
+            \item Kako lahko zapišemo rešitev glede na bazo?
+        \end{itemize}
+        \item S kakšnim nastavkom lahko rešujemo nehomogeno enačbo?
+        \item Kako?
+        \item Čemu ustreza desna stran enačbe?
+        \item Najdi koeficiente v razvoju rešitve odvisne od $t$
+        \item Kako določimo neznane koeficiente?
+        \item Enačbe kakšne oblike smo reševali?
+        \item Kaj je $\mathcal{L}$
+        \item Kaj je definicijsko območje, zaloga prednosti in predpis za $\mathcal{L}$
+        \item Kaj smo dobili?
+        \item Kaj pomeni KONS?
+        \item Kaj predpostavljamo za lastne vektorje?
+        \item Kako lahko zato izrazimo funkcijo definirano na prostosu od $x$?
+        \item Kako lahko predstavimo rešitev?
+        \item Vstavi rešitev v toplotno reačbo
+        \item Kaj dobimo?
+        \item Kdaj znamo rešiti naš problem?
+        \item Kaj je Sturm-Lionvilleeva teorija?
+    \end{enumerate}
+
+    \subsection{Toplotna enačba na neskončnem nosilcu}
+    \begin{enumerate}
+        \item Katero metodo uporabljamo pri tem?
+        \item Kako lahko razvijemp periodično funkcijo v vrsto?
+        \item Kaj je baza? Na katerem prostoru?
+        \item Kaj so koeficienti v vrsti?
+        \item Vpelji novo oznako funkcije
+        \item Vpelji oznako za spremenljivko
+        \item Kaj je razlika med dvema zaporednima spremenljivkama?
+        \item Čemu je enaka začetna funkcija?
+        \item Kako se imenuje vsota, ki jo dobimo?
+        \item Zapiši $f$ z integralom
+        \item Definiraj Fourierovo transformacijo
+        \item Definiraj inverzno Fourierovo transformacijo
+        \item Definiraj Schwarzov razred
+        \item Kaj velja za Fourierovo transformacijo? (2)
+        \item Kakšen začetni problem želimo rešiti s Fourierovo transformacijo?
+        \item Kako dobimo integralsko jedro, če je začetni problem definiran na Schwarzovem razredu?
+    \end{enumerate}
+
+    \section{Diracova delta "funkcija"}
+    \begin{enumerate}
+        \item Kako generiramo Diracovo delta funkcijo? 
+        \begin{itemize}
+            \item Kaj je nosilec?
+            \item integral
+            \item (pol)
+        \end{itemize}
+        \item Opis $\delta_0 (x)$
+        \item Kako bi to intuitivno opisal? 
+        \item Nariši vse
+        \item Kako pridemo do evaluacije?
+        \begin{itemize}
+            \item integral
+            \item Kaj velja za  $\delta_0 (x)$?
+            \item Zakaj to velja?
+            \item Oznaka evaluacije
+        \end{itemize}
+        \item Kaj v resnici definicija evaluacije?
+        \item Kako imenujemo  $\delta_0 (x)$?
+        \item Kako bi laho zapisali ealuacijo kot skalarni produkt?
+        \item Po kateri mertiki?
+        \item Podaj primer
+        \begin{itemize}
+            \item Kaj je njena *posebnost*
+        \end{itemize}
+        \item Definiraj prostor testnih funkcij
+        \item Definiraj prostor distirbucij
+        \item Prostor česa je torej to? Kaj je to?
+        \item Podaj primer elementa iz prostora 
+        \item Podaj primer - REGULARNA DISTRIBUCIJA
+        \item Definiraj odvod distribucije 
+        \item Kaj je odvod regularne distribucije? 
+        \item Definiraj odvod  $\delta_0 (x)$
+        \item Definiraj  $\delta_0 (x)$ s polom v poljubni točki
+    \end{enumerate}
+
+    \section{Integralska jedra}
+    \begin{enumerate}
+        \item Kje do zdaj se skriva linearen operator?
+        \item Kakšen linearen operator vzamemo?
+        \item Definiraj jedro
+        \item Po kakšnem integralu integriramo?
+        \item Kaj je disktretna verzija integralskega jedra?
+        \item Zapiši ekvavilentna matrična zapisa (integralskega in matričnega)
+        \item TRDITEV - Je Diracova funkcija soda ali liha? 
+        \item Dokaži
+        \item Kaj sledi iz tega? Pokaži, da res
+    \end{enumerate}
+
+    \subsection{Iskanje toplotnega jedra}
+    \begin{enumerate}
+        \item Kaj je toplotna enačba?
+        \item S kakšnim nastavkom jo rešujemo?
+        \item Vstavi v enačbo in posploši
+        \item Zakaj lahko notranjost integrala enačimo z 0?
+        \item Izrazi koeficiente nastavka
+        \item Kako dobimo konstanto, ki nastopa v koeficientu iz nastavka?
+        \item Izračunaj jo
+        \item Kaj je torej rešitev?
+        \item Kaj je najenostavnejši začetni pogoj za to rešitev?
+        \item Izračunaj rešitev
+        \item Polepšaj zapis rešitve
+        \item Kaj predstavlja rešitev?
+        \item TRDITEV - Kaj je rešitev $u(x - a, t)$? Dokaz
+        \item Kaj je rešitev začetnega problema, če je začetni pogoj poljubna delta funkcija?
+        \item TRDITEV - Kaj je posledica linearnosti toplotne enačbe? Dokaz 
+        
+        Rešitev splošnega začetnega problema 
+        \item Kako lahko drugače zapišemo $f(x)?$
+        \item Kaj je torej rešitev?
+        \item Kako bi opisala kaj smo dobili?
+        \item Kaj v tem je toplotno jedro?
+    \end{enumerate}
+
+    \section{Eliptična enačba}
+    \begin{enumerate}
+        \item S kakšnimi enačbami se bomo ukvarjali? (2)
+        \item Poimenuj ju
+        \item Kako je definiran Laplacov operator?
+        \item Kaj pa v več dimenzijah?
+        \item Kaj opisujeta enačbi?
+        \item Kaj je enačba nehomogene toplotne enačbe v dveh spremenljivkah?
+        \item Kje je podan robni pogoj?
+        \item Kaj pomeni, da je problem stacionaren (pri velikih časih)?
+        \item Kako opišemo stacionarno stanje?
+        \item Kaj je enačba eliptičnega začetnega problema? 
+        \item Naštej tri vrste robnih problemov
+        \item Opiši Dirichletov problem
+        \item Opiši Neumannov problem
+        \item Kaj je Neumannov odvod?
+        \item Ali so lahko podatki Neumannovega problema povsem poljubni?
+        \item Opiši mešani problem
+        \item Kdaj je Neumannov problem rešljiv?
+        \item Iz katerega zreka to sledi?
+        \item Navedi ta izrek
+        \item V kaj pretvorimo izrek v našem primeru?
+        \item Kaj mora torej veljati v Neumannovem primeru?
+        \item Kaj mora veljati v Dirichletovem primeru?
+        \item Definiraj harmonično funkcijo
+        \item Kaj velja za vse harnomične funkcije?
+        \item Definiraj rotacijsko simetričnost. Kaj to intuitivno pomeni?
+        \item Zapiši laplacov operatov v polarnih koordinatah
+        \item Kako se torej glasi laplacova enačba?
+        \item Kaj pa če je $W$ rotacijsko simetrična?
+        \item Kaj je rešitev?
+        \item Kako se rešitev imenuje?
+    \end{enumerate}
+
+    \subsection{Princip maksima}
+    \begin{enumerate}
+        \item IZREK - krepki princip maksima
+        \item IZREK - šibki princip maksima
+        \item IZREK - princip sfecičnih povprečij
+        \item Dokaz principa sferičnih povprečij
+        \begin{itemize}
+            \item Vpelji funkcijo
+            \item Kaj hočemo pokazat?
+            \item Kaj bo iz tega sledilo?
+            \item Dokaz 1
+            \item Dokaz 2
+        \end{itemize}
+        \item Kaj je obrat izreka sferičnih povprečij?
+        \item Dokaz obrata
+        \begin{itemize}
+            \item Predpostavi, da ni harmonična. Kje?
+            \item Na operatorju (integral) uporabi Greenovo formulo
+            \item S čem je dobljeno v protislovju?
+        \end{itemize}
+        \item Navedi krepki princip maksima
+        \item Dokaz
+        \begin{itemize}
+            \item Nariši skico
+            \item Kaj hočemo dokazat?
+            \item Predpostavi nasprotno - dobimo dve možnosti
+            \item Katera možnost takoj odpove? Zakaj?
+            \item Zakaj druga možnost ne velja?
+            \item Kako dobimo, da je u konstantna na celotnem območju?
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{Primeri uporabe principa maksima}
+    \begin{enumerate}
+        \item IZREK - Kdaj ima Dirichletov problem največ eno rešitev?
+        \item Dokaz
+        \begin{itemize}
+            \item Def novo funkcijo
+            \item Je harmonična? Zakaj?
+            \item Koliko sta njen min in max?
+        \end{itemize}
+        \item Kaj pa če območje ni omejeno? Podaj primer z več kot eno rešitvijo
+        \item IZREK - od česa je odvisna rešitev?
+        \item Dokaz
+        \begin{itemize}
+            \item Definiraj dva problema in novo funkcijo z njima
+            \item Kaj je problem za novo funkcijo?
+            \item Kaj naj velja za robna pogoja?
+            \item Kaj potem sledi za novo funkcijo?
+        \end{itemize}
+    \end{enumerate}
+
+    \section{Osnove Greenove teorije}
+    \begin{enumerate}
+        \item Pri čem se uporablja?
+        \item Katere probleme rešuje?
+        \item Kako jih rešuje?
+        \item Kaj iščemo v Dirichletovem primeru? Kje sta definirani?
+        \item Kaj mora zanju veljati?
+    \end{enumerate}
+
+    \subsection{Greenove identitete}
+    \begin{enumerate}
+        \item Iz česa sledijo greenove identitete?
+        \item Kaj je 1. Greenova identiteta?
+        \item Kaj je 2. Greenova identiteta?
+        \item Kaj je 3. Greenova identiteta?
+        \item IZREK - Posledica česa je?
+        \begin{itemize}
+            \item Kaj so pogoji?
+            \item Koliko rešitev ima Dirichletov problem?
+            \item Koliko rešitev ima mešani problem?
+            \item Koliko rešitev ima Neumannov problem in kakšne oblike so?
+        \end{itemize}
+        \item Dokaz za Dirichletov
+        \item Dokaz za mešani
+        \begin{itemize}
+            \item Definiraj novo funkcijo
+            \item Kaj je njen začetni problem?
+            \item Kaj dobimo z 2. Greenovo identiteto?
+            \item Kaj sledi za normalo gradienta nove funkcije?
+            \item Kaj sledi za to novo funkcijo?
+        \end{itemize}
+        \item DOkat za Neumannov problem
+        \begin{itemize}
+            \item Kaj hočemo dokazat?
+            \item Definiraj novo funkcijo
+            \item Kaj je njen začetni problem?
+            \item Vstavi v 2. Greenovo identiteto
+            \item Kaj velja za gradient nove funkcije?
+            \item Kakšna je torej nova funkcija?
+        \end{itemize}
+    \end{enumerate}
+
+    \subsection{Greenova funkcija}
+    \begin{enumerate}
+        \item Kaj je motivacija?
+        DIRICHLETOV PROBLEM
+        \item Kaj je rešitev fundamentalna Laplacove enačbe?
+        \item Kaj je rešitev Laplacove enačbe, ki je definirana povsod razen v eni točki
+        \item Kakšna je ta rešitev?
+        \item Kaj pa velja za $u$?
+        \item Vpelji oznako rešitve
+        \item Kako bomo iskali jedro?
+        \item Kakšna mora biti $u$ in kakšen $\Omega$?
+        \item Kje lahko zapišemo 3. Greenovo formujo za $u$? Formalno zapiši to območje
+        \item Uporabi 3. Greenovo identiteto za $u$ in $\Gamma$ na tem območju
+        \item Uporabi vse kar veš o območjih in funkcijah, ki nastopajo v tej enačbi
+        KAJ DOBIMO KO GRE $\epsilon \Rightarrow 0$?
+        \item Kaj je fundamentalna rešitev v polarnih koordinatah?
+        \item Kaj je rešitev za točke iz roba kroga, ki smo ga odvzeli?
+        \item Kako se glasi prvi člen - integral po robu kroga
+        \item Kaj dobimo v limiti?
+        \item Kako se glasi drugi člen - integral po robu kroga?
+        \item Kaj dobimo v limiti?
+        \item Kaj je torej rešitev?
+        \item Kako se imenuje rešitev?
+        \item Kakšna bo torej rešitev za naš (Dirichletov) problem?
+        \item Kako bomo modificirali funkcije, da bomo rešitev izrazili z že znanimi funkcijami?
+        \item Koliko funkcij rabimo?
+        \item Definiraj jih
+        \item Definiraj preslikavo, ki jo bomo uporabili v rešitvi
+        \item Zapiši Greenovo reprezentijsko formulo za $u$, $h$ in $\Gamma$
+        \item Izrazi rešitev $u$ z $G_{\Omega}$
+        \item IZREK - Povzetek
+        \item Navedi Greenovo reprezentijsko formulo s funkijo $G_{\Omega}$ 
+        \item Kako dokažemo?
+    \end{enumerate}
+    
+    \subsection{Fundamentalne rešitve}
+    \begin{enumerate}
+        \item Kako se glasi Greenova reprezentijska formula za testno funkcijo?
+        \item Navedi nekoliko splošnejšo obliko
+        \item Razpiši
+        \item Kako integriramo naprej?
+        \item Kaj potem dobimo?
+        \item Kako se dobljen rezultat vede?
+        \item Čemu je torej ta integral enak?
+        \item Kaj pa velja za $grad(\Gamma)$?
+        \item Definiraj fundamentalno rešitev Laplacove enačbe
+        \item Navedi še boljšo definicijo fundamentalne rešitve
+        \item Koliko je fundamentalnih rešitev? Dokaži
+        \item Podaj primer fundamentalne rešitve
+        \item Definiraj adjungirana operatorja
+        \item Podaj primer sebi adjungiranega operatorja (2x) 
+        \item Podaj primer operatorja, ki ni samemu sebi adjungiran
+        \item Definiraj fundamentalno rešitev z adjungiranim operatorjem
+        \item Čemu je enak parcialni diferencialni operator uporabljen na fundamentalni rešitvi?
+    \end{enumerate}
+
+    \section{Neumannova funkcija}
+    \begin{enumerate}
+        \item Kaj je motivacija?
+        \item Pokaži, da Neumanove funkcije ne moremo dobiti na isti način kot Greenove
+        \begin{itemize}
+            \item Kaj je Greenova reprezentijska formula?
+            \item S čem smo nadomestili $\Gamma$?
+            \item Uporabi kompatibilnostni pogoj
+            \item Čemu je torej enaka rešitev?
+            \item Kaj dobimo, če je $u = 1$?
+        \end{itemize}
+        \item Kako popravimo robni pogoj za $h$?
+        \item Definiraj Neumannovo funkcijo
+        \item Kaj je rešitev Neumannovega problema?
+        \item Zakaj se rešitve razlikujejo le za konstanto?
+        \item Poišči dve rešitvi Neumannovega problema
+    \end{enumerate}
+
+    \section{Greenova funkcija in konformne preslikave}
+    \begin{enumerate}
+        \item Kaj je motivacija?
+        \item Definiraj konformno preslikavo
+        \item Definiraj kompleksno odvedljivost
+        \item Kako razdelimo kompleksno odvedljivo funkcjo?
+        \item Definiraj odvod te razdelitve
+        \item Kaj je matrika odvoda?
+        \item Zapiši "realno" definicijo odvoda
+        \item Zapiši jo v realni obliki
+        \item Zapiši sistem iz odvodov $\phi$
+        \item Kaj sledi iz tega za realni in imaginarni del funkcije?
+        \item IZREK - Med kakšnimi območji obstajajo konformne preslikave?
+        \item V katero območje lahko vedno slikamo? aka podaj primer takega območja
+        \item IZREK - Definiraj preslikavo in zapiši Greenovo funkcijo za Dirichletov problem
+        Dokaz
+        \item Kaj velja zaradi konformnosti preslikave iz izreka?
+        \item Kako jo lahko zapišemo drugače?
+        \item Kaj velja za novo funkcijo v zapisu? Pokaži
+        \item Ali je $\Psi(\xi, \xi) = 0$? Zakaj?
+        \item Razpiši desno stran greenove funkcije
+        \item Kako bi torej zapisali Greenovo funkcijo?
+        \item Kaj velja za $h$ v tem zapisu? 
+        \item Kaj še moramo dokazati? (2)
+        \item 1
+        \begin{itemize}
+            \item Kaj sledi iz konformnosi?
+            \item Kam se slika rob?
+            \item Kakšna je torej preslikava med roboma?
+            \item Koliko je Greenova funkcija enaka?
+        \end{itemize}
+        \item 2
+        \begin{itemize}
+            \item Kaj je $h$?
+            \item Razpiši $\Psi$
+            \item Kateri del $h$ oz. $\Psi$ mora biti harmoničen?
+            \item Zakaj je $\Psi$ holomorfna?    
+        \end{itemize}
+        \item Kako iz konformne preslikave dobiš preslikavo iz izreka?
+    \end{enumerate}
+
+    \section{Valovna enačba v $R^3$}
+    \begin{enumerate}
+        \item Kaj je valovna enačba v 1+1?
+        \item Kaj je rešitev valovne enačbe v 1+1?
+        \item Kaj je rešitev, če je $f = 0$?
+        \item Nariši skico vala 
+        \item Vrednosti rešitve v 5 različnih točkah?
+        \item Kako imenujemo valovno enačbo v $R^3$ 
+        \item Kaj je valovna enačba v $R^3$?
+        \item Kakšna morata biti začetna pogoja?
+        \item Zapiši problem za valovno enačbo v sferičnih koordinatah
+        \item Kakšne rešitve iščemo?
+        \item Na kaj se pretvori valovna enačba?
+        \item Kako jo pretvorimo na standardno valovno enačbo?
+        \item Kaj želimo rešiti s pomočjo tega?
+        \item Kaj je problem pri reševanju?
+        \item Kako razširimo začetna pogoja?
+        \item Kaj je torej rešitev?
+        \item Kaj je splošen problem?
+        \item LEMA - Kako sta povezani rešitvi problemov, ki imata ničeln $f$ oz. $g$?
+        \item Dokaz
+        \item Kako razdelimo problem valovne enačbe na dva podproblema?
+        \item Definiraj sferično povprečje
+        \item DARBOUXOV IZREK
+        Dokaz
+        \item Zakaj hočemo sferično povprečje zapisati v lepši obliki?
+        \item Zapiši sferično povprečje v lepši obliki
+        \item Koliko je odvod sferičnega povprečja po $a$?
+        \item Kako vidimo, da res reši enačbo?
+        \item Kateri začetni problem reši sferično povprečje?
+        \item Kakšen operator je sferično povprečje?
+        \item Koliko je sferično povprečje pri radiju 0?
+        \item IZREK - Če u repi valovno enačbo v 3D, katero enačbo reši sferično povprečje za $u$?
+        \item Dokaz
+        \item Če $u$ reši valovno enačbo za $f = 0$, Katero enačbo reši $M_u$ in pri katerem začetnem pogoju?
+        \item Kaj je tu parameter in kaj aktivna spremenljivka?
+        \item Katero enačbo in pri katerem začetnem pogoju reši $M_u$ po izreku?
+        \item Kaj je tu parameter in kaj aktivna spremenljivka?
+        \item Kako razširimo na celo realno os?
+        \item Kako se glasi rešitev?
+        \item Kako pa dobimo rešitev $u$?
+        \item Kako se glasi rešitev $u$?
+        \item ?
+    \end{enumerate}
+
+\end{document}
