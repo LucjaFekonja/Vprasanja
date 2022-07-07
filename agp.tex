@@ -1,0 +1,485 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\title{Afina in projektivna geometrija}
+
+\begin{document}
+    \maketitle
+
+    \section{Uvod}
+    \begin{enumerate}
+        \item Kaj je $n$-razsežna geometrija?
+        \item V kakšni relaciji so elementi množic? Elementi katerih množic so v relaciji?
+        \item Naštej 3 geometrije
+        \item Definiraj transformacijo. 
+        \item Kaj pomeni, da so transformacije usklajene?
+        \item Kaj ohranjajo transformacije Evklidske ravnine?
+        \item Navedi razlog o aksiomu, zakaj je dobro vpeljat neevklidske geometrije
+        \item Katera geometrija se je potem vpeljala?
+        \item Navedi drugi in tretji programerski razlog za vpeljavo neevklidske geometrije
+        \item Navedi četrti lepotni razlog za vpeljavo neevklidske geometrije
+        \item Katera geometrija se zaradi tega vpelje?
+    \end{enumerate}
+
+    \section*{AFINA GEOMETRIJA}
+    \section{Afini podprostori v vektorskem prostoru}
+    \begin{enumerate}
+        \item Definiraj afin podprostor
+        \item Kaj pomeni beseda afin?
+        \item Definiraj afin prostor
+        \item LEMA - Kako zamenjamo element okoli katerega naredimo afin prostor? Dokaži.
+        \item POSLEDICA - V kakšnem velikostnem razmerju sta dva vektorska prostora afinih prostorov? Dokaži.
+        \item POSLEDICA - Kdaj sta vektorska prostora afinih prostoroc enaka? Dokaži.
+        \item Definiraj razsežnost afinega prostora
+        \item Kaj so 1-razsežni afini prostori? Kaj so dvorazsežni?
+        \item V $Z_2^2$ najdi 6 afinih premic
+        \item Definiraj afino kombinacijo
+        \item TRDITEV - O afini kombinaciji. Nad kakšnim obsegom mora biti afin prostor definiran?
+        \item Zakaj obseg ne sme imeti karakteristike 2?
+        \item LEMA - Navedi lemo, s katero razširimo trditev
+        \item Dokaz leme
+        \begin{itemize}
+            \item S katerim matematičnim načelom dokazujemo?
+            \item Razdeli primer $n = 3$ na dva dela
+            \item Dokaži za $n >= 4$, če vsota prvih $n - 1$ elementov ni 0
+            \item Dokaži za $n >= 4$, če vsota prvih $n - 1$ elementov 0
+        \end{itemize}
+        \item Dokaz trditve
+        \begin{itemize}
+            \item Dokaži da: A afin -> lin. kombinacija je v A
+            \item Definiraj tak vektorski prostor, da bo zanj A afin prostor
+            \item Pokaži, da je res vektorski podprostor afinega prostora
+        \end{itemize}
+        \item TRDITEV - Kaj sledi iz leme in trditve?
+        \item TRDITEV - Kaj velja za presek družine afinih podprostorov. Dokaži
+        \item Ali velja kaj podobnega za unije? Zakaj?
+        \item Definiraj afino ogrinjačo
+        \begin{itemize}
+            \item Kaj je oznaka?
+            \item Ali je sama afin prostor? Zakaj?
+        \end{itemize}
+        \item TRDITEV - Čemu je afina ogrinjača enaka? Dokaži obojestransko vsebovanost
+        \item Od česa je odvisno, če se afina podprostora sekata? Nariši skico, ko se ne
+        \item TRDITEV - Kdaj se afina prostora sekata? Dokaži
+        \item Kaj bi veljalo, če bi bil ta vektor vsebovan v direktnem produktu podprostorov $W$ in $U$?
+        \item LEMA - Formalno zapiši: Afina ogrinjača vsebuje A, B in morda tudi premico, ki povezuje a in b
+        \begin{itemize}
+            \item Definiraj prostor $T$ in z njim dokaži $\subseteq$
+            \item Definiraj prostor $C$ in z njim dokaži $\supseteq$ 
+        \end{itemize}
+        \item TRDITEV - Kaj je dimenzija unije dveh disjunktnih afinih prostorov? Dokaži
+        \item Defniraj kdaj sta dva afina prostora vzporedna
+        \begin{itemize}
+            \item Oznaka
+        \end{itemize}
+        \item IZREK - Natanko kdaj sta $\mathcal{A}$ in $\mathcal{B}$ vzporedna, če njun presek ni prazen? Dokaz
+        \item IZREK - Natanko kdaj sta $\mathcal{A}$ in $\mathcal{B}$ vzporedna, če je njun presek prazen? Dokaz
+        \item Definiraj afino neodvisnost
+        \item Definiraj afino bazo
+        \item IZREK - Kako iz bate za $A$ dobimo bazo za $W$?
+        \item IZREK - Kako iz bate za $W$ dobimo bazo za $A$?
+        \item POSLEDICA - Dopolnitev do baze. Dokaži
+    \end{enumerate}
+
+    \section{Semilinearne preslikave}
+    \begin{enumerate}
+        \item Definiraj semilinearno preslikavo
+        \item Navedi semilinearno preslikavo in njen njen avtomorfizem nad obsegom $C$
+        \item Kaj je grupa avtomorfizmov obsegov $R$, $Q$, $Z_p$? Kaj so zato njihove semilinearne preslikave?
+        \item S čem je semilinearna preslikava enolično določena?
+        \item TRDITEV - Semilinearna preslikava slika podprostore v podprostore. Dokaži
+        \item TRDITEV - Inverz semilinearne preslikave slika podprostore v podprostore. Dokaži
+        \item POSLEDICA - Kateri dvve algebraični strukturi sta zato vektorska posprostora?
+        \item TRDITEV - Kakšna preslikava slika linearno neodvisne vektorje v linearno neodvisne? Dokaži
+        \item Dokaži: Kompozitum semilinearnih preslikav je semilinearna preslikava
+        \item Dokaži: Kompozitum semilinearne preslikave je semilinearna preslikava
+        \item Kaj sledi iz teh dveh trditev?
+        \item Kdaj je vsota semilinearnih preslikav semilinearna preslikava?
+    \end{enumerate}
+
+    \section{Afine transformacije}
+    \begin{enumerate}
+        \item Definiraj afino transformacijo
+        \item IZREK - O premicah
+        \item OPOMBA - Zakaj izrek ne sledi direktno iz definicije?
+        \item Kdaj je slika premice vedno kar cela premica? Povej to isto stvar z inj, surj, bij
+        \item LEMA - Navedi pogoje in formaliziraj, da poljubna točka iz afine ogrinjače unije dveh afinih prostorov leži na premici
+        \item Zakaj je potrebno privzeti, da obseg ni $Z_2$?
+        \item Zakaj je potrebno privzeti, da presek ni prazen?
+        \item Dokaz leme
+        \begin{itemize}
+            \item Definiraj bazo preseka in dopolni do baz A in B
+            \item Zapiši točko c s pomočjo baznih vektorjev
+            \item Definiraj $\alpha$ in $\beta$
+            \item Pokaži, ko sta $\alpha$ in $\beta$ različna od 0
+            \item Pokaži, ko en od $\alpha$ oziroma $\beta$ enak 0
+        \end{itemize}
+        \item LEMA - Tri trditve, ki veljajo za dve premici, kjer je slika ene vsebovana v drugi
+        \item Dokaz leme
+        \begin{itemize}
+            \item Pravilno izberi $a$
+            \item Definiraj $\mathcal{A}_2$. Koliko je dimenzija?
+            \item Pokaži, da je $\tau (\mathcal{A}_2)$ vsebovan v $q$
+            \item Kaj iz tega sledi za dimenzijo slike $\mathcal{A}_2$?
+            \item Koliko je dimenzija $\mathcal{A}_i$?
+            \item Koliko je dimenzija $\tau (\mathcal{A}_i)$?
+        \end{itemize}
+        \item Dokaži izrek o premici
+        \item Kam afina transformacija slika nakolinearne točke? Dokaži
+        \item Dokaži, da je množica afinih transformacij grupa.
+        \item Kam afina transformacija preslika koplanarne točke?
+        \begin{itemize}
+            \item Dokaži, če so tri kolinearne
+            \item Dokaži, če so po tri nekolinearne
+        \end{itemize}
+        \item Kam afina transformacija slika vzporedne premice? Dokaži
+    \end{enumerate}
+
+    \section{Osnovni izrek afine geometrije}
+    \begin{enumerate}
+        \item Navedi osnovni izrek aritmetike
+        \item Dokaz
+        \begin{itemize}
+            \item ( <= ) Kam se slika afina premica?
+            \item ( => ) Definiraj preslikavo A. Kompozitum katerih preslikav je?
+            \item ( => ) Dokaži njeno aditivnost
+            \item ( => ) Kako dosežemo linearno neodvisnost, če sta dani točki x in y odvisni?
+            \item ( => ) Dokaži njeno semihomogenost
+            \item ( => ) Poišči avtomorfizem in dokaži, da je neodvisen od izbire vektorja. Kaj pa če sta x in y linearno odvisna?
+            \item ( => ) Pokaži, da je avtomorfizem
+        \end{itemize}
+        \item Kaj velja za afino transformacijo iz izreka?
+        \item Definiraj dilatacijo
+        \item IZREK - Kaj ohranja dilatacija? Dokaži
+        \item Navedi osnovni izrek afine geometrije za dilatacije
+        \begin{itemize}
+            \item ( <= ) Pokaži, da sta afin podpostor in njegova slika vzporedna
+            \item ( => ) Kakšen predpis takoj velja?
+            \item ( => ) Definiraj premico skozi 0 in x, prestavi jo. Kam se slika translirana premica?
+            \item ( => ) Kako dobimo skalar?
+            \item ( => ) Pokaži, da je skalar neodvisen od izbire vektorja
+        \end{itemize}
+        \item Definiraj translacijo
+        \item Kdaj je dilatacija translacija? Dokaži
+        \item Definiraj afino geometrijo
+        \item Definiraj kdaj sta afini geometriji izomorfni
+        \item Kaj pomeni, da preslikava ohranja inkluzije?
+        \item Kdaj sta afini geometriji izomorfni, če sta afina prostora definirana nad istim obsegom?
+    \end{enumerate}
+
+    \section{Aksiomatsko definirana afina ravnina}
+    \begin{enumerate}
+        \item Definiraj aksiomatsko definirano afino ravnino
+        \item Kdaj sta premici vzporedni?
+        \item Katerim aksiomom zadošča aksiomatsko definirana afina ravnina (3)?
+        \item Katerih razsežnosti $O^n$ so in katerih niso aksiomtsko definirane afine ravnine? Zakaj ni?
+        \item Definiraj Moultonovo ravnino
+        \item Navedi prvi Desarguesov izrek
+        \item Ali prvi Desarguesov izrek velja v Moultonovi ravnini? Zakaj ja/ne?
+        \item Definiraj afino transformacijo
+        \item Definiraj dilatacijo
+        \item Definiraj translacijo
+        \item Kaj velja za afine transformacije?
+        \item Ali obstaja afina transformacija iz Moultonove ravnine?
+        \item Čemu je ekvavilenten prvi Desarguesov izrek?
+        \begin{itemize}
+            \item Dokaži (A4 => prvi Desarguesov) 
+            \item Izberi potrebne točke in premice
+            \item Uporabi A4
+            \item Kaj bi veljalo, če $\tau (Q) \neq Q'$
+            \item Dokončaj dokaz
+            \item Dokaži (prvi Desarguesov => A4)
+            \item Konstruiraj $\tau$
+            \item Preveri, da je dobro definirana
+        \end{itemize}
+        \item Definiraj usmerjeno daljico
+        \item Kdaj sta usmerjeni daljici ekvavilentni?
+        \item Definiraj vektor
+        \item Navedi drugi Desarguesov izrek
+        \item Kateremu aksiomu A5 je ekvavilenten izrek?
+        \item Kaj omogoča aksiom A4?
+        \item Kaj omogoča aksiom A5?
+        \item IZREK - Kaj velja za afin prostor, ki zadošča aksiomom A1 do A5?
+        \item Navedi Papppusov izrek
+        \item Nad kakšnim obsegom velja Pappusov izrek?
+    \end{enumerate}
+
+
+    \section{PROJEKTIVNA GEOMETRIJA}
+    \begin{enumerate}
+        \item Kako iz afine ravnine dobimo projektivno?
+        \item Kako zgleda vložitev afine $Z^2_2$ v projektivno?
+        \item Kaj dobimo, če hiperboli dodamo točke v neskončnosti?
+        \item Zapiši predpis s katerim preslikamo hiperbolo
+        \item Zapiši predpis s katerim preslikamo parabolo
+        \item Kakšen mora biti obseg nad katerim delamo? Zakaj?
+        \item Kam vložimo realno afino ravnino $A$?
+        \item Kaj so točke v projektivni geometriji?
+        \item Kaj so premice v projektivni ravnini?
+        \item Kaj je presek dveh afinih premic v projektivnem? (izpelji)
+        \item Definiraj projektivno geometrijo
+        \begin{itemize}
+            \item Oznaka?
+        \end{itemize}
+        \item Kaj so v projektivnem 1-razsežni podprostori, 2-razsežni podprostori?
+        \item Definiraj projektivno razsežnost?
+        \item Kolikšna je razsežnost geometrije $P(V)$?
+        \item Kako iz projektivnih točk konstruiramo projektivno premico?
+        \item Kaj je dimenzija preseka projektivnih premic v projektivni geometriji projektivne razsežnosti 2?
+        \item Kje se sekata različni projektivni premici?
+    \end{enumerate}
+
+    \section{Dualnost}
+    \begin{enumerate}
+        \item Definiraj dualni vektorski prostor
+        \begin{itemize}
+            \item Oznaka?
+            \item Zakaj rabimo polje in ne obseg?
+        \end{itemize}
+        \item Kaj je dualna baza baze $V$?
+        \item Kaj sta si torej $V$ in $V*$?
+        \item Kaj pa $V$ in $V**$?
+        \item Poišči izomorfizem med $V$ in $V**$
+        \item Definiraj zgornji anhilator
+        \item Definiraj spodnji anhilator
+        \item Kaj sta anhilatorja?
+        \item Definiraj bijekcijo med $P(V)$ in $P(V*)$ in njen inverz
+        \item Dokaži, da sta si inverzni (v dveh točkah)
+        \item IZREK - Uporabi zgornji anhilator na $W_1 <= W_2 <= V$. Dokaži
+        \item IZREK - Čemu je enak zgornji angilator $(W_1  \cap W_2)$? Dokaži obojestransko vsebovanost
+        \item IZREK - Čemu je enak zgornji angilator $(W_1  + W_2)$? Dokaži obojestransko vsebovanost
+        \item IZREK - Kaj je kodimenzija $V$? Dokaži
+        \item Kaj je izjava o geometriji $P(V)$?
+        \item Kaj je dualna trditev?
+        \item Kaj je dualna izjava k izjavi: V projektivni ravnini skozi poljubni točki poteka natanko ena premica
+        \begin{itemize}
+            \item Zapiši izjavo v formalni obliki
+            \item Zapiši njej dualno izjavo
+        \end{itemize}
+        \item Kaj je dualna izjava k izjavi: $A, B, C$ so kolinearne točkev projektivni ravnini $P(V)$
+        \begin{itemize}
+            \item Zapiši izjavo v formalni obliki
+            \item Zapiši njej dualno izjavo
+        \end{itemize}
+        \item IZREK - Navedi PRINCIP DUALNOSTI
+        \item Definiraj trikotnik
+        \item Definiraj kdaj sta trikotnika $ABC$ in $A'B'C'$ v perspektivni legi
+        \item Navedi DESARGUESOV IZREK v projektivni geometriji
+        \item Dokaz
+        \begin{itemize}
+            \item (=>) Izberi 7 neničelnih vektorjev
+            \item Kako bi z njimi zapisala presečišče $AA'$, $BB'$ in $CC'$?
+            \item Kako bi z njimi zapisala točke, ki so presečišča stranic?
+            \item Kaj moramo dokazati za te točke?
+            \item Kaj je dualna izjava k tej izjavi?
+            \item Kako dokažemo nasprotno implikacijo? 
+        \end{itemize} 
+    \end{enumerate}
+
+    \section{Vložitev afine geometrije v projektivno}
+    \begin{enumerate}
+        \item Definiraj kake dimenzije naj bo $V$, $W <= V$ in afin podprostor prostora $V$
+        \item Kako afinemu prostoru priredimo projektivni podprostor? Definiraj preslikavo
+        \item LEMA - Koliko je $l(x + U)$? Dokaži
+        \item LEMA - Koliko je $l(x + U) \cap A$?
+        \item LEMA - Formalno zapiši, da vsak $Z$, ki ni cel vsebovan v $W$, je slika nečesa
+        \begin{itemize}
+            \item Pokaži, da je presek neprazen
+            \item Pokaži, da je $Z$ slika
+        \end{itemize}
+        \item Naštej 7 lastnosti, ki veljajo za preslikavo $l$
+        \item Dokaži, da je l injektivna
+        \item Kaj je slika l aka kdaj je $Z$ v zalogi vrednosti $l$? Dokaži
+        \item Dokaži, da $l$ ohranja inkluzije
+        \item Kaj velja za družino afinih podprostorov z nepraznim presekom? Dokaži
+        \item Kaj velja za družino afinih podprostorov? Dokaži
+        \item Kaj je dimenzija podprostora afine ravnine? Dokaži
+        \item Kdaj sta afina podprostora vzporedna? Dokaži
+        \item Kaj je $l$?
+        \item Kako označimo vse točke v $P(V)$?
+        \item Kaj sledi iz vzporednosti p in q za projektivno ravnino?
+        \item Kaj sledi iz vzporednosti p, q in r za projektivno ravnino? Kako to imenujemo?
+        \item Navedi drugi Desarguesov izrek za afino ravnino
+        \item Dokaz
+        \begin{itemize}
+            \item Kdaj moramo vse translirati?
+            \item Definiraj vložitev afine v projektivno
+            \item Kaj sledi iz ohranjana inkluzij?
+            \item Kaj velja za trikotnika v projektivnem?
+            \item Kaj velja po Desarguesovem izreku za projektivno ravnino?
+            \item Kaj torej sledi (točke v neskončnosti)
+        \end{itemize}
+        \item Navedi prvi Desarguesov izrek za afino ravnino. Začni dokaz
+    \end{enumerate} 
+
+    \section{Kolineacije in projektivnosti}
+    \begin{enumerate}
+        \item Definiraj kolineacijo
+        \item PRIMER - Definiraj kolineacijo za bijektivno semilinearno preslikavo in pokaži, da je kolineacija
+        \item Kaj velja če $L < L_1 + ... L_k$, kjer so $L, L_i \in PV$. Dokaži z indukcijo
+        \item Do česa lahko razširimo kolinealizacijo? Definiraj njen predpis
+        \item Kaj je kolineacija vsote projektivnih podprostorov? Dokaz
+        \item Kaj je kolineacija preseka projektivnih podprostorov? Dokaz - poglej kako so povezane dimenzije vsot in preseka + uporabi ohranjanje inkluzij
+        \item Navedi osnovni izrek projektivne geometrije (dokaz)
+        \item Kaj je kolineacija porojena s semilinearno preslikavo?
+        \item Definiraj projektivnost
+        \item V katerih primerih je kolineacija kar projektivnost?
+        \item Kakšen algebraičen objekt je množica vseh kolineacij? Za katero operacijo?
+        \item Definiraj grupo obrnljivih linearnih preslikav
+        \item Definiraj grupo obrnljivih semilinearnih preslikav
+        \item Definiraj grupo projektivnosti
+        \item Definiraj grupo kolineacij
+        \item Od kod kam slikajo preslikave v teh grupah?
+        \item Kateri grupi sta projektivni?
+        \item Kaj enačimo z $GL(v)$ in $\Gamma L(v)$?
+        \item Navedi dva izomorfizma med definiranimi grupami. Dokaži, da sta res izomorfizma
+        \item Definiraj projektivno ogrodje
+        \item Kaj je projektivno ogrodje, če je $dimV = 2$? Zakaj?
+        \item Kaj je projektivno ogrodje, če je $dimV = 2$? 
+        \item TRDITEV - Kaj velja za projektivnost, ki vsako točko iz projektivnega ogrodja preslika vase? Dokaži
+        \item POSLEDICA - Poišči projektivnost, ki slika projektivno ogrodje $PV$ v projektivno ogrodje $PV'$. Dokaži
+        \item Zakaj je projektivnost $PR^2 -> PR^2$ določena s tremi točkami? 
+    \end{enumerate}
+
+    \section{Perspektivnost}
+    \begin{enumerate}
+        \item Definiraj perspektivnost s centrom T
+        \item Navedi lemo o distributivnosti in jo dokaži
+        \item Koliko je dimenzija slike prostora z dimenzijo 1?
+        \item Čemu je enaka direktna vsota $X$ in $T$? Dokaži
+        \item Kaj je inverz perspektivnosti s ventrom T? Dokaži
+        \item Kaj je vsaka perspektivnost? Dokaz
+    \end{enumerate}
+
+    \section{Homogene koordinate}
+    \begin{enumerate}
+        \item Definiraj ekvavilenčno relacijo na $O^n \backslash {0}$ 
+        \item Kako označimo ekvavilenčni razred?
+        \item Kako točki $L$ priredimo homogene koordinate glede na projektivo ogrodje?
+        \item Pokaži, da so homogene koordinate dobro definirane
+        \item Pokaži, da so homogene koordinate odvisne le od izbire projektivnega ogrodja in ne od izbire vektorjev $u_i$
+        \item Kako prehajamo med homogenimi in nehomogenimi koordinatami?
+    \end{enumerate}
+
+    \section{Dvorazmerje}
+    \begin{enumerate}
+        \item Kaj je motivacija, da definiramo dvorazmerje?
+        \item Definiraj Dvorazmerje
+        \item TRDITEV - Katere zveze obstajajo med dvorazmerji glede na različna ogrodja? Dokaži
+        \item IZREK - Katera preslikava ohranja dvorazmerje? Dokaži
+        \item Definiraj dvorazmerje šopa
+        \item Kaj je dvorazmerje šopa v projektivni?
+        \item Kaj pa če bi izbrali drugo premico $t$?
+        \item Definiraj harmonično četverko
+        \item Kaj je dvorazmerje realnih števil x, y, u, v?
+        \item Kaj velja za dvorazmerje, če je $C$ točka v neskončnosti?
+        \item IZREK - Kako konstruiramo harmonično četverko? Dokaži s pomočjo prejšnega izreka
+        \item TRDITEV - Kdaj je projektivnost, ki ni identiteta, involucija?
+    \end{enumerate}
+
+    \section{Stožnice}
+    \begin{enumerate}
+        \item Definiraj algebraično množico
+        \item Kaj je stožnica?
+        \item Definiraj kdaj je polinom homogen?
+        \item Kaj so homogeni polinomi za $d = 0$?
+        \item Kaj so homogeni polinomi za $d = 1$?
+        \item Kaj so homogeni polinomi za $d = 2$ in $n=0$?
+        \item Ali homogen polinom definira preslikavo $PV -> O$?
+        \item Definiraj projektivno algebraično množico
+        \item Kaj je stožnica?
+        \item Kako lahko podamo stožnico v projektivnem?
+        \item Definiraj kvadratno formo in matriko, ki pripadata stožnici
+        \item Definiraj simetrično bilinearno formo
+        \item Kako dobimo simetrično bilinearno formo iz kvadratne forme?
+        
+        \item Kdaj sta si kvadratni formi ekvavilentni?
+        \item Kdaj sta si stožnici ekvavilentni?
+        \item Kako sta ti dve definiciji povezani? Dokaži
+        \item Ali trditev velja v drugo smer?
+        \item SYLVESTROV IZREK - Čemu je ekvavilentna forma na $R$ in čemu na $C$?
+    \end{enumerate}
+
+    \section{Klasifikacija stožnic v R in C}
+    \begin{enumerate}
+        \item Definiraj neizrojeno stožnico
+        \item Glede na rang matrike $M$ določi kvadratno dormo in stožnico
+        \item Katera stožnica je neizrojena?
+        \item Kaj je signatura?
+        \item Glede na signaturo določi kvadratno formo in stožnico
+        \item V katerem primeru dobimo neizrojeno neprazno stožnico?
+        \item IZREK - Koliko točk je v preseku neizrojene stožnice in projektivne premice?
+        \item IZREK - Kdaj je presek neprazen?
+        \item Kdaj je presek stožnice in projektivne premice prazen? (v realnem)
+        \item Kdaj je presek stožnice in projektivne premice ena točka? (v realnem)
+        \item Kdaj je presek stožnice in projektivne premice dve točki? (v realnem)
+    \end{enumerate}
+
+    \section{Pol in polara}
+    \begin{enumerate}
+        \item Definiraj tangento
+        \item Ali je ta definicija dobra v evklidski ravnini?
+        \item Definiraj polaro
+        \item TRDITEV - Kdaj je polara projektivna premica? Dokaži
+        \item TRDITEV - Kdaj je polara tangenta na $S$ v $A$?
+        \item TRDITEV - Ali v vsaki točki obstaja tangenta?
+        \item Pokaži, da je $A \in p_B \Leftrightarrow B in b_A$
+        \item Pokaži, da če $A \neq B$, potem tudi njuni polari nista enaki
+        \item Zapiši predpis za bijekcijo med točkami in premicami v projektivni ravnini. Pokaži, da je bijekcija
+        \item Definiraj pol premice $p$ glede na neizrojeno stožnico $S$
+        \item Kako konstruiramo polaro? (3 načini)
+        \begin{itemize}
+            \item Za točke na stožnici
+            \item Za točke, za katere obstajajo tangente na stožnico
+            \item Za točke za katere ne obstajajo tangente na stožnico 
+        \end{itemize}
+    \end{enumerate}
+
+    \section{Dvorazmerja na stožnici}
+    \begin{enumerate}
+        \item TRDITEV - Katere štiri točke, ki jih tvorimo iz $A$ in premic, tvorijo harmonično četverko?
+        \item Dokaz
+        \begin{itemize}
+            \item Definiraj harmonično četverko
+            \item Kaj sledi iz tega, da je $B$ na polari $A$?
+            \item Zakaj $\Phi(d, c) \neq 0$?
+        \end{itemize}
+        \item Navedi SETINERJEV IZREK
+        \item OPOMBA - Kaj je polara, če je $T = A$?
+        \item Dokaz
+        \begin{itemize}
+            \item Ali lahko ležijo točke $A, B, C in D$ na isti premici?
+            \item Kaj tvorijo ${D, A, B, C}$?
+            \item Kako lahko zapišemo $d$ in kako $t$??
+            \item Zapiši matriko na bazi ${a, c, d}$
+            \item Izberi $d'$. Kaj je potem $\beta'$
+            \item Kakšna so razmerja med $\alpha'. \beta' in \gamma'$?
+            \item Kakšno enačbo dobimo, ker $D$ leži na stožnici?
+            \item Kakšno enačbo dobimo, ker $T$ leži na stožnici?
+            \item Kaj je dvorazmerje, če so točke $A, B C, D, T$ različne?
+            \item Uvedi oznake za $C'$ in $D'$. 
+            \item Zakaj so koordinate razlčne?
+            \item Kako računamo dvorazmerje $A, B, C', D'$?
+            \item Uporabi izpeljani enačbi (D in T na stožnici)
+            \item Kaj je dvorazmerje, če je $A = T$?
+            \item Uvedi kaj sta $D'$ in $A'$
+            \item Kako zračunamo $p_A$?
+            \item Kako izračunamo dvorazmerje $A', B, C, D'$
+        \end{itemize}
+        \item Definiraj dvorazmerje točk na stožnici
+        \item $A, B, C$ so dane točke na stožnici. Kako konstruiramo točko $D$ na stožnici, da $A, B, C, D$ tvorijo harmonično četverko?
+        \item Navedi PASCALOV IZREK
+        \item Dokaz (najprej sekaj dvorazmerje $D(A, B, C, B')$ z $A'$ in $E$, potem pa še z $C'$ in $E$)
+        \item Ali velja obrat?
+        \item Navedi BRAINCHONOV IZREK
+        \item Dokaz
+        \begin{itemize}
+            \item Označi dotikališča
+            \item Kaj so njihove polare?
+            \item Kaj so polare točk v izreku?
+            \item Kaj označimo z $X, Y, Z$?
+            \item Kaj so polare teh točk?
+            \item Dokoči dve točki (presečišči) kot v izreku in pokaži, da sta ista točka
+        \end{itemize}
+    \end{enumerate}
+\end{document}
