@@ -1,0 +1,448 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\title{Algebra 2}
+
+\begin{document}
+    \maketitle
+
+    \section{Končne grupe}
+    \subsection{Posledice Lagrangeeovega izreka}
+    \begin{enumerate}
+        \item Navedi Lagrangeov izrek
+        \item Navedi vse majhne grupe do izomorfizma natančno do reda 8
+        \item POSLEDICA 1 - Kakšno je razmerje med redom grupe in redom njenih podgrup?
+        \item Za katere $m$ velja $a^m = 1$? Dokaži ekvavilenco
+        \item Kaj velja za praštevilo $p$, če $a^p = 1$?
+        \item Kakšen je red slike homomorfizma?
+        \item Kdaj je red slike enak redu elementa
+        \item Kakšen je red odseka $aN$?
+        \item POSLEDICA 2 - Kakšni so redi elementov grupe? Dokaži
+        \item POSLEDICA 3 - Kaj velja za vsak element grupe reda $n$? Dokaži
+        \item POSLEDICA 4 - Navedi Fermatov mali izrek. Navedi še njegovo drugo obliko
+        \begin{itemize}
+            \item Dokaz
+        \end{itemize} 
+        \item POSLEDICA 5 - Kdaj je grupa ciklična? Kateri elementi jo generirajo?
+        \item \begin{itemize}
+            \item Dokaz
+        \end{itemize} POSLEDICA 6 - Čemu je ekvivalentno dejstvo, da ima ciklična grupa praštevilski red? Dokaz
+    \end{enumerate}
+
+    \subsection{Razredna formula}
+    \begin{enumerate}
+        \item Definiraj kdaj sta elementa konjugirana
+        \item Kakšna relacija je konjugiranost? Dokaži
+        \item Definiraj konjugiranostni razred?
+        \item Čemu je enaka vsota redov konjugiranostnih razredov?
+        \item Kdaj ima konjugiranostni razred en sam element?
+        \item Definiraj centralizator elementa $a$
+        \item Kdaj je centralizator elementa enak celi grupi?
+        \item LEMA - V kakšnem razmerju je centralizator do grupe? Dokaži
+        \item LEMA - Navedi formulo, ki povezuje navedene pojme. Dokaži
+        \item Kaj velja za element iz centra grupe? (2 lastnosti)
+        \item Koliko je konjugiranostnih razredov z enim elementom?
+        \item Navedi razredno formulo
+    \end{enumerate}
+
+    \subsection{Cauchyjev izrek}
+    \begin{enumerate}
+        \item Navedi Cauchyjev izrek
+        \item Dokaz
+        \begin{itemize}
+            \item S katero metodo dokazujemo?
+            \item Dokaži če je red grupe enak $p$
+            \item Dokaži, če grupa ni Abelova in $n > p$
+            \item Dokaži, če je grupa Abelova in $n > p$
+        \end{itemize}
+        \item Navedi Cauchyjev izrek malo drugače. Dokaži ekvavilenco
+        \item Definiraj p-grupo
+        \item Za kakšne grupe ima ta definicija smisel?
+        \item Kaj je ekvivalentno temu, da je $G$ p-grupa?
+    \end{enumerate}
+
+    \subsection{Delovanja grup}
+    \begin{enumerate}
+        \item Definiraj delovanje grupe G na množici X
+        \item Definiraj orbito elementa x
+        \item Definiraj stabilizator elementa x
+        \item PRIMER 1 - Navedi delovanje s katerim grupa deluje sama na sebi
+        \item PRIMER 2 - Pokaži, da je konjungiranje delovanje
+        \item PRIMER 3 - Navedi delovanje s katerim grupa deluje na množici vseh odsekov podgrupe H
+        \item PRIMER 4 - Navedi delovanje s katerim grupa deluje na množici vseh podgrup
+        \item PRIMER 5 - Navedi delovanje s katerim grupa $S_n$ deluje na množici vseh polinomov v n spremenljivkah
+        \item PRIMER 6 - Navedi delovanje s katerim grupa $GL_n(R)$ deluje na množici $R^n$
+        \item Kaj je trivialno delovanje?
+        \item V kakšnem razmerju je stabilizator z dano grupo?
+        \item Definiraj ekvavilenčno relacijo
+        \item Kaj so njeni ekvavilenčni razredi?
+        \item Navedi izrek o orbiti in stabilizatorju (formula). Navedi preslikavo, ki formulo dokazujemo
+        \item Navedi razredno formulo v skladu z novimi oznakami
+        \item Kaj velja za to formulo, če je G končna p-grupa?
+    \end{enumerate}
+
+    \subsection{Izreki Sylowa}
+    \begin{enumerate}
+        \item Definiraj normalizator
+        \item Navedi tri trditve, ki veljajo za normalizator
+        \item Definiraj p-podgrupo
+        \item Definiraj p-podgrupo Sylowa
+        \item (definiraj najprej red grupe G) Kakšen red imajo p-podgrupe?
+        \item (definiraj najprej red grupe G) Kakšen red imajo p-podgrupe Sylowa?
+        \item Za kakšno grupo G veljajo izreki Sylowa?
+        \item IZREK 1 - Kdaj G vsebuje p-podgrupo reda $p^l$?
+        \begin{itemize}
+            \item S katero metodo dokazujemo ta izrek?
+            \item Dokaži, če $p$ ne deli reda centra grupe
+            \item Dokaži, če $p$ deli red centra grupe
+        \end{itemize}
+        \item IZREK 2 - V kakšnem razmerju so p-podgrupe in p-podgrupe Sylowa?
+         \begin{itemize}
+             \item Definiraj množico vseh odsekov
+             \item Definiraj delovanje
+             \item Definiraj množico $Z$
+             \item Pokaži, da $Z$ ni prazna
+             \item Pokaži, da je $H$ podgrupa
+         \end{itemize}
+         \item IZREK 3 - Iz dane p-podgrupe pridobi novo p-podgrupo. Zakaj to velja?
+         \item POSLEDICA - Kdaj je p-podgrupa Sylowa podgrupa edinka?
+         \item IZREK 4 - Kaj velja za število vseh p-podgrup?
+         \begin{itemize}
+             \item Definiraj množico vseh p-podgrup Sylowa
+             \item Definiraj delovanje na tej množici
+             \item Kaj je orbita?
+             \item Kaj je stabilizator?
+             \item Po lemi o orbiti in stabilizatorju privedi dokaz do konca
+         \end{itemize}
+         \item IZREK 5 - Kakšne oblike je število vseh p-podgrup?
+         \begin{itemize}
+             \item Definiraj množico vseh p-podgrup
+             \item Definiraj delovanje na njej
+             \item Definiraj podmnožico podgrup Sylowa $W$
+             \item Kateri element je zagotovo vsebovan v $W$?
+             \item Pokaži, da je to edini element, ki je vseboven v $W$
+             \item Izpelji koliko je število p-podgrup Sylowa 
+         \end{itemize}
+    \end{enumerate}
+
+    \subsection{Končne Abelove grupe}
+    \begin{enumerate}
+        \item Naštej vse končne abelova grupe
+        \item LEMA 1 - Navedi lemo, s katero grupo razdelimo na dve podgrupi
+        \item Dokaz
+        \begin{itemize}
+            \item kaj moraš dokazat?
+            \item uporabi Lagrangeevo posledico
+            \item uporabi tujust elementov
+            \item pokaži, da je vsota direktna
+        \end{itemize}
+        \item Iz leme izpelji izomorfizem med cimličnimi grupami
+        \item LEMA 2 - Posploši prvo lemo na splošnejše rede grupe G. Dokaz
+        \item LEMA 3 - Kdaj je p-grupa ciklična? (ekvavilenca)
+        \item Dokaz
+        \begin{itemize}
+            \item ( => ) če je G ciklična
+            \item ( <= ) če je red(G) = p
+            \item ( <= ) Kaj lahko poveš o edini podgrupi s p elementi?
+            \item ( <= ) formalno zapiši kaj je ta podgrupa
+            \item ( <= ) uporabi izrek o izomorfizmu in definiraj preslikavo
+            \item ( <= ) kaj velja za sliko endomorfizma?
+            \item ( <= ) kaj zato vemo o kvocientni grupi?
+            \item ( <= ) kaj so elementi kvocientne grupe?
+            \item ( <= ) kako lahko torej razpišemo G?
+            \item ( <= ) pokaži, da je G ciklična
+        \end{itemize}
+        \item LEMA 4 - Kako podgrupo dopolnimo do grupe? Kakšna mora biti podgrupa, da to sploh lahko storimo?
+        \item Dokaz 
+        \begin{itemize}
+            \item kako dopolnimo, če je G ciklična?
+            \item če G ni ciklična, kaj je IP.?
+            \item Kaj nam o G in C pove lema 3?
+            \item Kaj velja za 
+        \end{itemize}
+        \item Navedi osnovni izrek o končnih abelovih grupah
+        \item Kaj so ciklične grupe?
+        \item Kako izberemo podgrupe, če je G netrivialna?
+        \item Dokaži osnovni izrek
+        \item Navedi ekvivalentno formulacijo izreka
+        \item Kdaj so si direktne vsote ekvavilentne?
+        \item IZREK - Klasifikacija končnih Abelovih grup
+        \item Dokaz
+        \item Navedi osnovni izrek o končno generiranih abelovih grupahni
+    \end{enumerate}
+
+    \section{Deljivost v komutativnih kolobarjih}
+    \subsection{Glavni ideali}
+    \begin{enumerate}
+        \item Definiraj glavni ideal
+        \item Razloži vsebovanost elementa a in ideala (a)
+        \item Kako je generiran glavni ideal?
+        \item Kdaj je ideal glavni?
+        \item Definiraj desni ideal generiran z a. Kako ga označimo?
+        \item Definiraj levi ideal generiran z a. Kako ga označimo?
+        \item Kakšne oblike elementi so v dvostranskem idealu generiranem z a? Kako ga označimo?
+        \item S kakšnimi kolobarji se ukvarjamo mi?
+        \item Katera dva ideala sta vedno glavna? S čem sta generirana?
+        \item Kdaj je (a)=K? Zakaj?
+        \item Kdaj sta to edina ideala? Kaj iz tega sledi?
+        \item Kaj so glavni ideali celih števil? S čem je generiran? Kaj zato velja?
+        \item Kaj so glavni ideali kolobarja F[X]? S čem so generirani? Kaj velja za glavne ideali F[X]?
+        \item Definiraj končno generiran ideal
+        \item Kaj vse vsebuje končno generiran glavni ideal?
+        \item Elementi kakšne oblike so v končno generiranem idealu?
+        \item Kako je končno generiran ideal povezan z glavnimi ideali?
+        \item Kaj vsebuje ideal (4, 6) kolobarja celih števil? Čemu je enak?
+        \item Kaj vsebuje ideal (2, X) kolobarja F[X]? Ali je glavni?
+    \end{enumerate}
+
+    \subsection{Deljivost in nerazcepnost}
+    \begin{enumerate}
+        \item Definiraj, da b deli a. Kakšen mora biti kolobar? Kako označimo?
+        \item Poimenuj a in b
+        \item Definiraj deljivost z glavnimi deali
+        \item Dokaži ekvavilenco definicij deljivosti 
+        \item Definiraj kdaj sta elementa asociirana
+        \item Kaj velja za deliteje asociiranih elementov. Katere elemente asociirana elementa delita?
+        \item Natanko kdaj sta si elementa celega kolobarja asociirana?
+        \begin{itemize}
+            \item dokaz (=>)
+            \item dokaz (<=)
+        \end{itemize}
+        \item Kaj so asociirani elementi v kolobarju celih števil?
+        \item Kaj so asociirani elementi v F[X]?
+        \item Definiraj največji skupni delitelj elementov a in b. V kakšnem kolobarju je definiran?
+        \item Definiraj kdaj sta elementa tuja
+        \item Kaj je z enoličnostjo in obstojem največjega skupnega delitelja?
+        \item Kaj velja za različne največje skupne delitelje?
+        \item Kako dosežemo enoličnost v Z?
+        \item Kako dosežemo enoličnost v F[X]?
+        \item TRDITEV - Kdaj obstaja največji skupni delitelj kolobarja? Kakšne oblike je? Kakšen mora biti kolobar?
+        \begin{itemize}
+            \item dokaži, da obstaja skupni delitelj in njegovo obliko
+            \item dokaži, da je največji
+        \end{itemize}
+        \item Definiraj nerazcepen element v kakem kolobarju ga definiramo?
+        \item Definiraj razcepen element
+        \item Kaj so nerazcepni elementi kolobarja celih števil?
+        \item Najdi nek nerazcepen element v Z[X]. Zakaj ta element ni nerazcepen v Q[X]?
+        \item Kaj so obrnljivi elementi v Z[i]? Najdi nek razcepen in nek nerazcepen element v tem kolobarju in razloži zakaj je razcepen oz. nerazcepen
+        \item TRDITEV - Kdaj je element celega kolobarja nerazcepen (ekvavilenca)? Dokaži
+    \end{enumerate}
+
+    \subsection{Evklidski kolobarji}
+    \begin{enumerate}
+        \item Navedi izrek o deljenju za polinome
+        \item Dokaz
+        \begin{itemize}
+            \item Dokaži, če je deljenec ničeln. Kaj vzamemo za $q(x)$ in kaj za $r(x)$?
+            \item S katero metodo dokazujemo?
+            \item Kaj vzamemo za $q(x)$ in kaj za $r(x)$ pri $st(f(x)) = 0$?
+            \item Dokaži za $m -> m+1$
+        \end{itemize}
+        \item Definiraj evklidski kolobar
+        \item Naštej tri osnovne evklidske kolobarje
+        \item Najdi enega, ki ni evklidski
+        \item Za vsakega od njih najdi preslikavo $\delta$ ($Z$, $F[X]$)
+        \item Katera algebraična struktura je vedno evklidski kolobar? Kaj je njena preslikava $\delta$?
+        \item IZREK - Kakšni so ideali evklidskega kolobarja? Dokaži
+        \item POSLEDICA - Navedi ekvavilence temu, da je $p$ nerazcepen. Pri kakšnih pogojih to velja? Dokaži
+        \item POSLEDICA - Kaj Zagotovo obstaja v evklidskem kolobarju?
+        \item POSLEDICA - Zaradi katere se vpelje praelement. Dokaži
+        \item Definiraj praelement
+        \item Kaj velja za praelemente? (Od sošolca zapiski)
+        \item Kaj velja za praelemente v Evklidskih kolobarjih?  Dokaži (Od sošolca zapiski)
+        \item LEMA - Kdaj lahko tvorimo zaporedje elementov, katerih ideali so strogo naraščajoči?
+        \item Navedi dve definiciji Noetherskega kolobarja
+        \item Navedi Hilertov izrek o bazi
+        \item Naštej tri kolobarje, ki so Noetherski
+        \item Navedi nek kolobar, ki ni Noetherski
+        \item LEMA - Kateri kolobarji so vedno Noetherski? Dokaži
+        \item Kaj povesta zadnji dve lemi?
+        \item Kaj so ideali Noetherskega kolobarja?
+        \item Definiraj kolobar z enolično faktorizacijo
+        \item Kaj pomeni "do asociiranosti natančno"?
+        \item Kateri kolobarji imajo enolično faktorizacijo?
+        \item Povzemi kaj velja za evklidske kolobarje
+        \item Navedi osnovni izrek aritmetike za evklidske kolobarje
+    \end{enumerate}
+
+    \subsection{Nerazcepni polinomi}
+    \begin{enumerate}
+        \item Kdaj je kolobar polinomov evklidski?
+        \item Kakšni so ideali kolobarja polinomov? Kakšne oblike so? Kaj jih generira?
+        \item Definiraj največji skupni delitelj polinomov. Ali obstaja? Kakšne oblike je? Kdaj je enoličen?
+        \item Kaj so obrnljivi elementi v kolobarju polinomov?
+        \item Kateri elementi kolobarja polinomov so nerazcepni?
+        \item Čemu je nerazcepnost polinomov ekvavilentna?
+        \item Kako lahko zapišemo nekonstantne polinome?
+        \item Kateri polinomi so nerazepni?
+        \item Kaj pravi osnovni izrek algebre v $C$?
+        \item Kateri polinomi so nerazcepni v $C$?
+        \item Kako lahko zapišemo nekonstantne polinome v $C$?
+        \item Kateri polinomi so nerazcepni v $R$?
+        \item Kako lahko zapišemo nekonstantne polinome v $R$?
+        \item TRDITEV - Kdaj ima polinom ničlo a? (kaj ga mora deliti?) Dokaži
+        \item POSLEDICA - Kdaj so polinomi katere stopnje nerazcepni? 
+        \item Kaj NE vpliva na nerazcepnost polinomov?
+        \item Definiraj primitiven polinom na dva načina
+        \item LEMA - Kaj je produkt primitivnih polinomov?
+        \begin{itemize}
+            \item S katero tehniko dokazujemo?
+            \item Definiraj ideal v katerem je produkt polinomov
+            \item Kaj pa sledi za ta ideal, ker sta $f(x)$ in $g(x)$ primitivna?
+            \item Definiraj odseka
+            \item Koliko je produkt teh odsekov?
+            \item Kaj iz tega sledi za kvocientni kolobar?
+            \item Privedi do protislovja z zadnjo točko
+        \end{itemize}
+        \item IZREK - Kako je z nerazcepnostjo polinomov v $Z[X]$ in $Q[X]$?
+        \begin{itemize}
+            \item Kaj moramo dokazati?
+            \item Zapiši enakost
+            \item Vpelji največje skupne delitelje in zapiši enakost
+            \item Uporabi lemo
+            \item Izpelji do konca
+        \end{itemize}
+        \item Ime leme, ki sledi iz leme in izreka
+        \item Kaj pravi Eisensteinov kriterij?
+        \begin{itemize}
+            \item S katero tehniko dokazujemo?
+            \item Kaj sledi iz izreka?
+            \item Kaj velja za konstanten člen?
+            \item Kaj velja za vodilni člen?
+            \item Kaj velja za koeficiente enega od faktorjev (polinomov)?
+            \item Razpiši koeficient začetnega polinoma
+            \item Privedi do protislovja
+        \end{itemize}
+        \item Katera znana polinomska funkcija je nerazcepna?
+        \item Definiraj množico primitivnih korenov
+        \item Definiraj ciklonomične polinome
+    \end{enumerate}
+
+    \section{Ničle polinomov in razširitve polj}
+    \subsection{Algebraični in transcedentni elementi}
+    \begin{enumerate}
+        \item Zakaj vpeljujemo nova polja?
+        \item Naštej 7 primerov polj
+        \item Navedi en algebraičen in en transcedentni element
+        \item Kaj je razlika med transcedentnim in algebraičnim elementom?
+        \item Definiraj algebraičen element
+        \item Definiraj transcedentni element
+        \item Definiraj minimalni polinom algebraičnega elementa $a$
+        \item Definiraj stopnjo algebraičnosti
+        \item Dokaži obstoj minimalnega polinoma algebraičnega elementa $a$
+        \item Dokaži enoličnost minimalnega polinoma algebraičnega elementa $a$
+        \item Navedi ekvavilence temu, da je $p(x)$ minimalni polinom algebraičnega elementa $a$
+        \begin{itemize}
+            \item 1. ekvavilenca
+            \item 2. ekvavilenca
+            \item 3. ekvavilenca
+        \end{itemize}
+        \item Kateri elementi so algebraični stopnje 1? Kaj je njihov minimalni polinom?
+        \item Pokaži, da je vsako kompleksno število algebraično nad realnimi števili. Kaj je njegova stopnja algebraičnosti?
+        \item Najdi transcedentni element v polju racionalnih funkcij. Zakaj ni algebraičen?
+        \item Kdaj algebraičnim oz. transcedentnim elementom pravimo števila?
+        \item Definiraj algebraično število
+        \item Kako iz polinoma v $Q[X]$ dobimo polinom v $Z[X]$?
+        \item Ali je $i$ algebraičen? Če ja, katere stopnje in katerega polinoma?
+        \item Ali je praštevilo $p$ algebraično število? Če ja, katere stopnje in katerega polinoma?
+        \item Kakšna je množica algebraičnih števil? Zakaj?
+        \item Kakšna je množica transcedentnih števil?
+    \end{enumerate}
+
+    \subsection{Končne razširitve}
+    \begin{enumerate}
+        \item Kako lahko obravnavamo razširitev E polja F? Pokaži zakaj
+        \item Definiraj končno razširitev E polja F
+        \item Definiraj stopnjo razširitve. Kako jo označimo?
+        \item Kako označujemo stopnjo razširitve v linearni algebri?
+        \item Navedi primer končne razširitve. Kaj je baza razširitve kot vektorskega prostora? Kolikšna je stopnja razširitve?
+        \item Navedi primer, ki ni končna razširitev $Q$. Zakaj ni?
+        \item IZREK - O "tranzitivnosti" končnih razširitev. Dokaži
+        \begin{itemize}
+            \item Definiraj baze
+            \item Pokaži, da je "baza" E nad F ogrodje
+            \item Pokaži, da je "baza" E nad F linearno neodvisna
+        \end{itemize}
+        \item POSLEDICA - Kdaj $[L:F]$ deli $[E:F]$. Dokaži
+        \item Definiraj algebraično razširitev
+        \item Definiraj transcedentno razširitev
+        \item TRDITEV - Katere razširitve so algebraične? Dokaži
+        \item Ali velja obrat trditve?
+        \item Kaj označuje $F[A]$?
+        \item Kaj označuje $F(A)$?
+        \item Kako pišemo ti dve množici, če je A končna?
+        \item Eksplicitno zapiši ti dve množici v primeru, ko $A = {a}$
+        \item Kako imenujemo $F(A)$?
+        \item Definiraj enostavno razširitev polja. Kako imenujemo element $a$?
+        \item PRIMER - Kakšne oblike so elementi $f(i)$ za $f(x) \in Q[X]$? Zakaj?
+        \item Čemu je enak $R[X]$? Kaj zato velja?
+        \item IZREK - V skladu z novo vpeljanimi oznakami povej kaj velja za algenraičen element stopnje $n$ $a$
+        \begin{itemize}
+            \item Pokaži, da je $F[A]$ polje (vsebovanost inverznih elementov)
+            \item Dokaži enakost $F[A]$ in množice, ki si jo definirala (vzami nek element iz $F[A]$ in pošiči njegovo stopnjo)
+            \item Pokaži stopnjo algebraičnosti (poišči bazo)
+        \end{itemize}
+        \item PRIMER - Poišči bazo $Q(n-root{p})$
+        \item PRIMER - Kaj je $Q(\sqrt{2})$
+        \item PRIMER - Kaj je $Q(tretji koren iz 2)$
+        \item OPOMBA - Poišči epimorfizem kolobarjev $F[X] \rightarrow F[a]$
+        \begin{itemize}
+            \item Poišči izomorfizem, če je $a$ algebraičen
+            \item Poišči izomorfizem, če je $a$ transcedenten
+        \end{itemize}
+        \item Kaj velja za stopnjo algebraičonsti polja, $L$, ki vsebuje $F$?
+        \item IZREK - Razširi prejšni izrek na višje dimenzije
+        \begin{itemize}
+            \item Kaj sledi iz indukcijske predpostavke?
+            \item Kako iz tega dobiš končno razširitev polja F z n algebraičnimi elementi?
+            \item Zakaj je kolobar $F[a_1, ... a_n]$ polje?
+        \end{itemize}
+        \item Opiši polje $Q(\sqrt{2}, \sqrt{3})$. Kolikšna je njegova stopnja algebraičnosti nad poljem $Q$?
+        \item Navedi izrek o primitivnem elementu
+        \item PRIMER - Čemu je enak $Q(\sqrt{2}, \sqrt{3})$?
+        \item POSLEDICA - Algebraično opiši množico vseh elementov iz $E$, ki so algebraični nad $F$. Dokaži
+        \item Navedi primer podpolja algebraičnih števil
+        \item Navedi primer polja algebraičnih števil nad nekim poljem, ki je algebraična razširitev, a ni končna
+    \end{enumerate}
+
+    \subsection{Konstrukcije z ravnilom in šestilom}
+    \begin{enumerate}
+        \item Poimenuj tri probleme antične grčije
+        \item Opiši podvojitev kocke in formaliziraj
+        \item Opiši trisekcijo kota in formaliziraj
+        \item Opiši kvadraturo kvadrata in formaliziraj
+        \item Kako iz dane množice točk konstruiramo novo točko z ravnilom in šestilom?
+        \item Definiraj konstruktabilne točke
+        \item Kaj je največja množica konstruktabilnih točk?
+        \item Definiraj konstruktabilna števila
+        \item Zapiši lemo, s katero izpeljemo glavni izrek tega poglavja. Dokaži (razdeli na tri dele)
+        \item Navedi glavni izrek tega poglavja. Koliko je stopnja algebraičnosti komponent v izreku?
+        \item Razloži zakaj ni možno - podvojitev kocke
+        \item Razloži zakaj ni možno - trisekcija kota
+        \item Razloži zakaj ni možno - kvadratura kroga
+    \end{enumerate}
+
+    \subsection{Kratnost ničle polinoma}
+    \begin{enumerate}
+        \item TRDITEV - Natanko kdaj ima polinom ničlo $a \in E$? Pazi od kod jemlješ polinome!
+        \item Definiraj enostavno ničlo
+        \item Definiraj $k$-kratno ničlo
+        \item PRIMER - Najdi in kategoriziraj ničle $x^4 - 2x^3 + 2x - 1$
+        \item Kako pridemo do polinoma brez ničel v $E$?
+        \item Koliko ničel ima $f$?
+        \item Pokaži, da $f$ nima drugih ničel kot teh, ki jih dobimo v razcepu
+        \item Kolikšne stopnje je $f$?
+        \item TRDITEV - Največ koliko ničel ima neničeln polinom?
+        \item PRIMER - Dan imaš polinom $f(x) = x^6 - 3x^4 + 4$ Najdi število ničel in polinom brez ničel v $Q$, $R$ in $C$
+        \item Kdaj so ničle polinomov enostavne?
+        \item Definiraj odvod polinoma
+        \item Kolikšne stopnje je odvod polinoma? Kdaj ta enačba velja? Zakaj drugače ne velja?
+        \item IZREK - Kdaj so vse ničle polinoma enostavne? Dokaži
+        \item Definiraj seperabilen polinom 
+        \item Definiraj seperabilno razširitev
+        \item Definiraj perfektno polje
+        \item Navedi primera perfektnih polj
+        \item Navedi primer polja, ki ni perfektno. Koliko je njegova karakteristika?
+    \end{enumerate}
+\end{document}
